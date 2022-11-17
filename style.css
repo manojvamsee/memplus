@@ -86,7 +86,16 @@ li {
     width: 396px;
     height: 396px;
 }
+.fruit img{
+    width: 396px;
+    height: 396px;
+}
 .modules img{
     width: 60px;
     height: 60px;
+}
+.fruitlose img{
+    margin: auto;
+    width: 200px;
+    height: 200px;
 }
