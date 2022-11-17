@@ -1,0 +1,92 @@
+
+
+.heading{
+    text-align:center;
+}
+.square {
+    height: 484px;
+    margin:auto;
+    width: 396px;
+    border-radius: 60px;
+    background-color: black;
+}
+
+.square h1{
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+}
+.topbar{
+    height: 70px;
+    width: 396px;
+    background-color: rgb(55, 136, 228);
+    border-top-right-radius: 60px;
+    border-top-left-radius: 60px;
+}
+.backbutton{
+    float: left;
+    margin-left: 15px;
+}
+.homebutton{
+    float: right;
+    margin-right: 10px;
+    
+}
+.backbutton h1{
+    color: white;
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 14px;
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+.homebutton h1{
+    color: white;
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 14px;
+    margin-right: 10px;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+.menu{
+    list-style-type: none;
+    padding-left: 10px;
+}
+.menuItem{
+    color: white;
+    text-decoration: none;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+    margin-bottom: 30px;
+}
+.menu img{
+    height: 60px;
+    width: 60px;
+}
+.mainscreen::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
+.mainscreen{
+    width: 396px;
+    height: 414px;
+    background-color: rgb(0, 0, 0);
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    margin-top: -55px;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+}
+.charts img{
+    width: 396px;
+    height: 396px;
+}
+.modules img{
+    width: 60px;
+    height: 60px;
+}
