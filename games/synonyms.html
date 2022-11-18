@@ -4,67 +4,74 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../style.css">
+    <style>
+        .option{
+            font-size: 35px !important;
+        }
+        #question{
+            font-size:35px;
+        }
+    </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
         var i=0;
-        var equation_list=['antonym:terse','synonym:fruitless','synonym:vexation','antonym:docile','antonym:dawdle','antonym:ingenuous'];
-                var dict={};
-                var dict = { 
-                0:['antonym:terse','laconic','wordy','abrupt','compact','wordy'],
-                1: ['synonym:fruitless','potent','frightful','practical','unsuccessful','unsuccessful'],
-                2: ['synonym:vexation','annoyance','certainty','delight','opaqueness','annoyance'],
-                3: ['antonym:docile','defiant','devout','impressive','unattractive','defiant'],
-                4: ['antonym:dawdle','hasten','linger','tarry','delay','hasten'],
-                5:['antonym:ingenuous','innocent','sincere','naive','dishonest','dishonest'],
-                }
-                function displayLogic(k){
-                    console.log(k);
-                    console.log(typeof k);
-                    if(k===6){
-                        location.href='fruitend.html';
-                    }
-                var x=document.getElementById('question');
-                var o1=document.getElementById('1');
-                var o2=document.getElementById('2');
-                var o3=document.getElementById('3');
-                var o4=document.getElementById('4');
-                //console.log(equation_list[i]);
-                x.innerHTML=dict[k][0]+"=?" ;
-                o1.textContent=dict[k][1];
-                o2.textContent=dict[k][2];
-                o3.textContent=dict[k][3];
-                o4.textContent=dict[k][4];
-                var correctanswer=dict[k][5];
-                
-                }
-            $( document ).ready(function() {
-                console.log( "ready!" );
-                displayLogic(0);
-            });
-           
-            $(document).on("click",".option",function(evt){
-                var d=evt.target.id;
-                console.log(d);
-                console.log(dict[0][5]);
-                var t1=dict[0][5];
-                var t2=dict[1][5];
-                var t3=dict[2][5];
-                var t4=dict[3][5];
-                var t5=dict[4][5];
-                var t6=dict[5][5];
-                var tlist=[t1,t2,t3,t4,t5,t6];
-                console.log(tlist);
-                   if(d===tlist[i]){
-                        console.log("Inside if");
-                        i=i+1;
-                        displayLogic(i);
-                    }
-                    else if(d!=tlist[i]){
-                        location.href='fruitlose.html';
-                    }
-                 
-            });
-            
+        var dict={
+        0:['antonym of terse?','laconic','wordy','abrupt','compact','2'],
+                1: ['synonym of fruitless?','potent','frightful','useless','practical','3'],
+                2: ['synonym of vexation?','annoyance','certainty','delight','ambiguity','1'],
+                3: ['antonym of docile?','defiant','devout','impressive','gross','1'],
+                4: ['antonym of dawdle?','hasten','linger','tarry','delay','1'],
+                5:['antonym of ingenuous?','innocent','sincere','dishonest','naive','3'],
+                6:['synonym of noxious?','unhealthy','nutritious','bubbly','airy','1']
+        }
+        function displayLogic(k){
+            console.log(k);
+            console.log(typeof k);
+            if(k===7){
+                location.href='fruitend.html';
+            }
+        var x=document.getElementById('question');
+        var o1=document.getElementById('1');
+        var o2=document.getElementById('2');
+        var o3=document.getElementById('3');
+        var o4=document.getElementById('4');
+        //console.log(equation_list[i]);
+        x.innerHTML=dict[k][0];
+        o1.textContent=dict[k][1];
+        o2.textContent=dict[k][2];
+        o3.textContent=dict[k][3];
+        o4.textContent=dict[k][4];
+        var correctanswer=dict[k][5];
+        
+        }
+    $( document ).ready(function() {
+        console.log( "ready!" );
+        displayLogic(0);
+    });
+   
+    $(document).on("click",".option",function(evt){
+        var d=evt.target.id;
+        console.log(d);
+        console.log(dict[0][5]);
+        var t1=dict[0][5];
+        var t2=dict[1][5];
+        var t3=dict[2][5];
+        var t4=dict[3][5];
+        var t5=dict[4][5];
+        var t6=dict[5][5];
+        var t7=dict[6][5];
+        var tlist=[t1,t2,t3,t4,t5,t6,t7];
+        console.log(tlist);
+           if(d===tlist[i]){
+                console.log("Inside if");
+                i=i+1;
+                displayLogic(i);
+            }
+            else if(d!=tlist[i]){
+                location.href='fruitlose.html';
+            }
+         
+    });
     </script>
 </head>
 
@@ -90,6 +97,8 @@
         </table>
     </center>
     </div>
+
+    
 
 </body>
 
