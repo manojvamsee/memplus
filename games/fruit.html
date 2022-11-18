@@ -4,35 +4,6 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../style.css">
-    <script>
-        function foo(){
-            
-        }
-        function handleClick(){
-            var x=document.getElementById('img').src;
-            console.log(x);
-            var fruitlist=['cherry.png','bomb.png','strawberry.png','pear.png','orange.png','bomb1.png','mango.png','mango1.png','bomb2.png','water-melon.png'];
-            if(x.includes('bomb')===true){
-                location.href='../gamemodules/focus.html';
-                console.log('in the bomb if');
-            } 
-            else{
-                var i=0;
-                var y=document.getElementById('img');
-                y.display='None';
-                x='http://127.0.0.1:5500/img/'+fruitlist[i];
-                console.log('in the fruit else');
-                console.log(x);
-                i+=1;
-                console.log(i);
-            }
-            console.log(x);
-            if(i==9||(x.includes('water')===true)){
-
-                location.href='fruitend.html';
-            }
-        }
-    </script>
 </head>
 
 <body>
@@ -48,12 +19,13 @@
             </div>
         </div>
         <div class="mainscreen">
-            <div class="fruit" onclick="handleClick()" style="cursor: pointer;">
-                <img src="../img/cherry.png" alt="water melon image" id="img">
-        </div>
+            <div class="fruit" onclick="location.href='fruit1.html';" style="cursor: pointer;">
+                <img src="../img/water-melon.png" alt="cherry image">
+            </div>
         </div>
     </div>
 
 </body>
 
 </html>
+
