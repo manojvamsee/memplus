@@ -9,15 +9,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
         var i=0;
-        var equation_list=['9+8-2/3','3+15-24','6*3+9','7+6-2','12*3+5','13+3-8'];
+        var equation_list=['How many heros are wearing a red cape?','Which hero has tricolored hair?','Which hero has horns?','Which hero has thunder symbol on the cape?','Which hero has a pink cape?','13+3-8'];
                 var dict={};
                 var dict = { 
-                0:['9+8-2/3','Yes','No','1'],
-                1: ['3+15-24','Yes','No','1'],
-                2: ['6*3+9','Yes','No','1'],
-                3: ['7+6-2','Yes','No','1'],
-                4: ['12*3+5','Yes','No','1'],
-                5:['13+3-8','Yes','No','1']
+                0:['How many heros are wearing a cape?','4','3','1'],
+                1: ['Which hero has tricolored hair?','Unicorn Dog','Chick Pea','1'],
+                2: ['Which hero has two horns?','Moo Moo','Unicorn Dog','1'],
+                3: ['Which hero has thunder symbol on the cape?','Red Panda','Unicorn Dog','2'],
+                4: ['Which hero has a pink cape?','Moo Moo','Unicorn Dog','2'],
+                5:['Which hero is yellow in color?','Chick Pea','Moo Moo','1']
                 }
                 function displayLogic(k){
                     console.log(k);
@@ -29,7 +29,7 @@
                 var o1=document.getElementById('1');
                 var o2=document.getElementById('2');
                 //console.log(equation_list[i]);
-                x.innerHTML=dict[k][0]+"=?" ;
+                x.innerHTML=dict[k][0];
                 o1.textContent=dict[k][1];
                 o2.textContent=dict[k][2];
                 var correctanswer=dict[k][3];
